@@ -1,0 +1,31 @@
+{
+  "name": "pifile",
+  "displayName": "vscode-pifile",
+  "description": "Pifile syntax and language support",
+  "keywords": [
+    "pifile",
+    "pimod",
+    "raspberry-pi",
+    "pi-image"
+  ],
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pifile",
+      "aliases": ["Pifile", "pifile"],
+      "extensions": [".Pifile"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pifile",
+      "scopeName": "source.pifile",
+      "path": "./syntaxes/pifile.tmLanguage"
+    }]
+  }
+}
